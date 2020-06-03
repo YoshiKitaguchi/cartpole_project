@@ -124,31 +124,3 @@ for e in range(10000):
     if complete:
         print('complete...!')
         break
-
-
-# from moviepy.editor import ImageSequenceClip
-
-# def botPlay(env):
-#     state = env.reset()
-#     steps = 0
-#     frames = []
-#     while True:
-#         frame = env.render(mode='rgb_array')
-#         frames.append(frame)
-#         action = torch.max(model(Variable(FloatTensor([state]))), 1)[1].data[0]
-#         next_state, reward, done, _ = env.step(action)
-#
-#         state = next_state
-#         steps += 1
-#
-#         if done or steps >= 1000:
-#             break
-#
-#     clip = ImageSequenceClip(frames, fps=20)
-#     clip.write_gif('4_policy_gradient_play.gif', fps=20)
-#
-
-#     plt.savefig('4_policy_gradient_score.png')
-# #
-# botPlay(ENV)
-# plot_durations(HISTORY)
